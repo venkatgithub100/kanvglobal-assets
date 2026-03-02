@@ -1,3 +1,4 @@
+
 /* ── Page base ── */
 .kga-cp {
   font-family: 'Sora', sans-serif;
@@ -831,11 +832,16 @@
   .kga-footer-grid { grid-template-columns: 1fr; }
   .kga-footer-bottom { flex-direction: column; align-items: flex-start; }
 }
-/* Fix TC first-section hiding on Campus Edge page */
-body.zs-page-campus-edge-placement-accelerator div[data-element-type="section"].zpsection:first-of-type,
-body.zs-page-campus-edge-placement-accelerator div[data-element-type="section"].zpsection:first-child {
+
+/* ── Fix TC first-section hiding on Campus Edge page ── */
+div[data-element-type="section"].zpsection:first-of-type,
+div[data-element-type="section"].zpsection:first-child {
   height: auto !important;
-  min-height: 0 !important;
+  min-height: unset !important;
   max-height: none !important;
   overflow: visible !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: normal !important;
+  font-size: unset !important;
 }
